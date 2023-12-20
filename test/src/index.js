@@ -8,7 +8,7 @@ import { hydrate ,render} from 'react-dom';
 // const { hydrate, render } = ReactDOM;
 
 const rootElement = document.getElementById("root");
-const root = ReactDOM.createRoot(rootElement);
+// const root = ReactDOM.createRoot(rootElement);
 
 
 // const app = (
@@ -16,9 +16,9 @@ const root = ReactDOM.createRoot(rootElement);
 // );
 
 if (rootElement.hasChildNodes()) {
-  root.hydrate(<App />);
+  ReactDOM.hydrate(<App />);
 } else {
-  root.render(<App />);
+  ReactDOM.render(<App />);
 }
 // ReactDOM.render(<App />, rootElement);
 
